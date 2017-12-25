@@ -1,3 +1,59 @@
 /* Clases reutilizables */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #a36125;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
 
 /* Clases específicas */
+
+header hr {
+  background-color: #fff;
+  /* display: inline-block; */
+  height: 0.125em;
+  margin-top: 0;
+  width: 80%;
+  /* margin-left: 3%;
+  margin-right: 3%; */
+}
+/*
+header hr::before {
+  content: "«";
+  color: blue;
+  margin-left: 3%;
+  margin-right: 3%;
+} */
+
+h1, h2 {
+  text-align: center;
+}
+
+.google-maps {
+
+}
+
+.restaurants-pictures-container {
+  padding: 2em;
+}
+
+.row-rest-pics:first-of-type{
+  margin-bottom: 3em;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
