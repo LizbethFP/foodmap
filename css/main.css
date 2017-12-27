@@ -18,7 +18,23 @@ body {
   box-sizing: border-box;
 }
 
+.container-flex-row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.vh100 {
+	height: 100vh;
+}
+
+.active {
+  border: 2px solid #fff;
+}
+
 /* Clases específicas */
+.main-title {
+  margin-top: 85%;
+}
 
 header hr {
   background-color: #fff;
@@ -41,8 +57,10 @@ h1, h2 {
   text-align: center;
 }
 
-.google-maps {
-
+.google-maps-container iframe {
+  border: none;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .restaurants-pictures-container {
