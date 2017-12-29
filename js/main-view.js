@@ -3,9 +3,28 @@ function begin() {
   searchRestaurant();
   mouseOverPicture();
 }
+
+
+// Función que genera un efecto al pasar el mouse sobre alguna de las imágenes
+function mouseOverPicture() {
+  $('.row-rest-pics').on('mouseover', 'figure', function() {
+    // Crear un párrafo que muestre el nombre del restaurante
+    // var restaurantName = $('<p/>');
+    // restaurantName.text('Nombre de restaurante');
+    // // Agregar el párrafo creado dentro del contenedor de imagen para mostrar el nombre del restaurante
+    // $(this).append(restaurantName);
+    // Quitar y agregar clase active en el elemento donde ocurre el mouseover
+    $(this).removeClass('active').addClass('active');
+    // Quitarle la clase active a los hermanos
+    $(this).siblings().removeClass('active');
+    // Quitarle el nombre de restaurante a los hermanos (NO FUNCIONA)
+    $(this).siblings().remove('p');
+  });
+}
+
 // Función para hacer la búsqueda de los tipos de restaurantes
 function searchRestaurant() {
-  // Creo la variable en el que se aloja el tipo de comida vegetariana, parrillas y el contenedor que los envuelve
+  // Crear la variable en el que se aloja el tipo de comida vegetariana, parrillas y el contenedor que los envuelve
   var veggieRestaurant = $('.veggie-restaurant');
   var steakRestaurant = $('.steak-restaurant');
   var restaurantsPicturesContainer = $('.restaurants-pictures-container');
@@ -21,22 +40,6 @@ function searchRestaurant() {
     } else if (restauranteType === '') {
       restaurantsPicturesContainer.hide();
     }
-  });
-}
-
-function mouseOverPicture() {
-  $('.row-rest-pics').on('mouseover', 'figure', function() {
-    // Crear un párrafo que muestre el nombre del restaurante
-    var restaurantName = $('<p/>');
-    restaurantName.text('Nombre de restaurante');
-    // Agregar el párrafo creado dentro del contenedor de imagen para mostrar el nombre del restaurante
-    $(this).append(restaurantName);
-    // Quitar y agregar clase active en el elemento donde ocurre el mouseover
-    $(this).removeClass('active').addClass('active');
-    // Quitarle la clase active a los hermanos
-    $(this).siblings().removeClass('active');
-    // Quitarle el nombre de restaurante a los hermanos (NO FUNCIONA)
-    $(this).siblings().remove('p');
   });
 }
 

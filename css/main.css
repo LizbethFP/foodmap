@@ -66,6 +66,9 @@ h1, h2 {
 .restaurants-pictures-container {
   padding: 2em;
 }
+.restaurants-pictures-container figure:nth-child(n+3) {
+  margin-top: 2em;
+}
 
 .row-rest-pics:first-of-type{
   margin-bottom: 3em;
