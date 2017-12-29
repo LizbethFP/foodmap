@@ -2,6 +2,37 @@
 function begin() {
   searchRestaurant();
   mouseOverPicture();
+  // mouseOutPicture();
+}
+
+// Función para mostrar nombre del restaurante vegetariano
+function showVeggieRestaurantName(data) {
+  // alert('Esta función debe conectarse con el mouseover');
+  //  Crear variable para tipo de restaurante (vegetariano)
+  var typeofrestaurant = dataRestaurants['vegetarian-restaurants'];
+  // Crear variable para capturar la lista de restaurantes tomándolo de la data de restaurates
+  var restaurantNames = [];
+  // Iterar por cada uno de los restaurantes de comida vegetariana para conseguir el nombre de cada uno
+  for (var i = 0; i < typeofrestaurant.length; i++) {
+    name = typeofrestaurant[i]['name'];
+    restaurantNames.push(name);
+  }
+  return restaurantNames;
+}
+
+// Función para mostrar nombre del restaurante de parrillas
+function showSteakRestaurantName(data) {
+  // alert('Esta función debe conectarse con el mouseover');
+  //  Crear variable para tipo de restaurante (vegetariano)
+  var typeofrestaurant = dataRestaurants['steak-restaurants'];
+  // Crear variable para capturar la lista de restaurantes tomándolo de la data de restaurates
+  var restaurantNames = [];
+  // Iterar por cada uno de los restaurantes de comida vegetariana para conseguir el nombre de cada uno
+  for (var i = 0; i < typeofrestaurant.length; i++) {
+    name = typeofrestaurant[i]['name'];
+    restaurantNames.push(name);
+  }
+  return restaurantNames;
 }
 
 
@@ -9,18 +40,27 @@ function begin() {
 function mouseOverPicture() {
   $('.row-rest-pics').on('mouseover', 'figure', function() {
     // Crear un párrafo que muestre el nombre del restaurante
-    // var restaurantName = $('<p/>');
-    // restaurantName.text('Nombre de restaurante');
+    var restaurantName = $('<p/>');
+    restaurantName.text(showVeggieRestaurantName()[0]);
     // // Agregar el párrafo creado dentro del contenedor de imagen para mostrar el nombre del restaurante
-    // $(this).append(restaurantName);
+    $(this).append(restaurantName);
     // Quitar y agregar clase active en el elemento donde ocurre el mouseover
     $(this).removeClass('active').addClass('active');
     // Quitarle la clase active a los hermanos
     $(this).siblings().removeClass('active');
-    // Quitarle el nombre de restaurante a los hermanos (NO FUNCIONA)
-    $(this).siblings().remove('p');
+    // Quitarle el nombre de restaurante a los hermanos
+    $(this).siblings().find('p').remove();
+    // llamado de función para mostrar nombre de restaurante
+    // showVeggieRestaurantName();
   });
 }
+//
+// function mouseOutPicture() {
+//   $('.row-rest-pics').on('mouseout', 'figure', function() {
+//     $(this).find('p').remove();
+//   });
+// }
+
 
 // Función para hacer la búsqueda de los tipos de restaurantes
 function searchRestaurant() {
