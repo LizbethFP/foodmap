@@ -33,7 +33,7 @@ var dataRestaurants = {
   ],
   'steak-restaurants': [{
     'name': 'The steakhouse',
-    'slogan': '',
+    'slogan': 'Welcome home!',
     'address': '321 Fake Avenue, Fony City, Unreal Country',
     'services': 'valet parking'
   }, {
@@ -47,13 +47,13 @@ var dataRestaurants = {
     'address': '753 Fake Avenue, Fony City, Unreal Country',
     'services': 'eat and drink'
   }, {
-    'name': 'sr4',
-    'slogan': '',
+    'name': 'Steak and beans',
+    'slogan': 'We got grandma\'s recipe',
     'address': '951 Fake Avenue, Fony City, Unreal Country',
     'services': 'valet parking'
   }, {
-    'name': 'sr5',
-    'slogan': '',
+    'name': 'Unpretentious steak',
+    'slogan': 'Five stars steaks',
     'address': '852 Fake Avenue, Fony City, Unreal Country',
     'services': 'Birthday discounts'
   }, {
