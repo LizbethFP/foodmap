@@ -54,6 +54,8 @@ function mouseOverPicture() {
 
   /* Crear función para mostrar el nombre de los RESTAURANTES VEGETARIANOS AL PASAR EL MOUSE encima de la imagen */
   $(veggieRestPic1).on('mouseover', function() {
+    // Evitar que se repita el nombre varias veces al pasar el mouse encima
+    $(this).find('p').text('');
     // Crear un párrafo que muestre el nombre del restaurante
     var restaurantName = $('<p/>');
     restaurantName.text(getVeggieRestaurantName()[0]);
@@ -67,6 +69,8 @@ function mouseOverPicture() {
     $(this).siblings().find('span').remove();
   });
   $(veggieRestPic2).on('mouseover', function() {
+    // Evitar que se repita el nombre varias veces al pasar el mouse encima
+    $(this).find('p').text('');
     // Crear un párrafo que muestre el nombre del restaurante
     var restaurantName = $('<p/>');
     restaurantName.text(getVeggieRestaurantName()[1]);
@@ -80,6 +84,8 @@ function mouseOverPicture() {
     $(this).siblings().find('span').remove();
   });
   $(veggieRestPic3).on('mouseover', function() {
+    // Evitar que se repita el nombre varias veces al pasar el mouse encima
+    $(this).find('p').text('');
     // Crear un párrafo que muestre el nombre del restaurante
     var restaurantName = $('<p/>');
     restaurantName.text(getVeggieRestaurantName()[2]);
@@ -93,6 +99,8 @@ function mouseOverPicture() {
     $(this).siblings().find('span').remove();
   });
   $(veggieRestPic4).on('mouseover', function() {
+    // Evitar que se repita el nombre varias veces al pasar el mouse encima
+    $(this).find('p').text('');
     // Crear un párrafo que muestre el nombre del restaurante
     var restaurantName = $('<p/>');
     restaurantName.text(getVeggieRestaurantName()[3]);
@@ -106,6 +114,8 @@ function mouseOverPicture() {
     $(this).siblings().find('span').remove();
   });
   $(veggieRestPic5).on('mouseover', function() {
+    // Evitar que se repita el nombre varias veces al pasar el mouse encima
+    $(this).find('p').text('');
     // Crear un párrafo que muestre el nombre del restaurante
     var restaurantName = $('<p/>');
     restaurantName.text(getVeggieRestaurantName()[4]);
@@ -119,6 +129,8 @@ function mouseOverPicture() {
     $(this).siblings().find('span').remove();
   });
   $(veggieRestPic6).on('mouseover', function() {
+    // Evitar que se repita el nombre varias veces al pasar el mouse encima
+    $(this).find('p').text('');
     // Crear un párrafo que muestre el nombre del restaurante
     var restaurantName = $('<p/>');
     restaurantName.text(getVeggieRestaurantName()[5]);
@@ -134,6 +146,8 @@ function mouseOverPicture() {
 
   /* Crear función para mostrar el nombre de los RESTAURANTES DE PARRILLAS AL PASAR EL MOUSE encima de la imagen */
   $(steakRestPic1).on('mouseover', function() {
+    // Evitar que se repita el nombre varias veces al pasar el mouse encima
+    $(this).find('p').text('');
     // Crear un párrafo que muestre el nombre del restaurante
     var restaurantName = $('<p/>');
     restaurantName.text(getSteakRestaurantName()[0]);
@@ -147,6 +161,8 @@ function mouseOverPicture() {
     $(this).siblings().find('span').remove();
   });
   $(steakRestPic2).on('mouseover', function() {
+    // Evitar que se repita el nombre varias veces al pasar el mouse encima
+    $(this).find('p').text('');
     // Crear un párrafo que muestre el nombre del restaurante
     var restaurantName = $('<p/>');
     restaurantName.text(getSteakRestaurantName()[1]);
@@ -160,6 +176,8 @@ function mouseOverPicture() {
     $(this).siblings().find('span').remove();
   });
   $(steakRestPic3).on('mouseover', function() {
+    // Evitar que se repita el nombre varias veces al pasar el mouse encima
+    $(this).find('p').text('');
     // Crear un párrafo que muestre el nombre del restaurante
     var restaurantName = $('<p/>');
     restaurantName.text(getSteakRestaurantName()[2]);
@@ -173,6 +191,8 @@ function mouseOverPicture() {
     $(this).siblings().find('span').remove();
   });
   $(steakRestPic4).on('mouseover', function() {
+    // Evitar que se repita el nombre varias veces al pasar el mouse encima
+    $(this).find('p').text('');
     // Crear un párrafo que muestre el nombre del restaurante
     var restaurantName = $('<p/>');
     restaurantName.text(getSteakRestaurantName()[3]);
@@ -186,6 +206,8 @@ function mouseOverPicture() {
     $(this).siblings().find('span').remove();
   });
   $(steakRestPic5).on('mouseover', function() {
+    // Evitar que se repita el nombre varias veces al pasar el mouse encima
+    $(this).find('p').text('');
     // Crear un párrafo que muestre el nombre del restaurante
     var restaurantName = $('<p/>');
     restaurantName.text(getSteakRestaurantName()[4]);
@@ -199,6 +221,8 @@ function mouseOverPicture() {
     $(this).siblings().find('span').remove();
   });
   $(steakRestPic6).on('mouseover', function() {
+    // Evitar que se repita el nombre varias veces al pasar el mouse encima
+    $(this).find('p').text('');
     // Crear un párrafo que muestre el nombre del restaurante
     var restaurantName = $('<p/>');
     restaurantName.text(getSteakRestaurantName()[5]);
