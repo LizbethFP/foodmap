@@ -76,10 +76,17 @@ h1, h2 {
 
 .row-rest-pics figure {
   vertical-align: center;
+  box-sizing: border-box;
 }
 /* .row-rest-pics:first-of-type{
   margin-bottom: 3em;
 } */
+
+.row-rest-pics figure p {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+}
 
 img {
   width: 100%;
