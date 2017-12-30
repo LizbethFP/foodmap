@@ -16,7 +16,7 @@ var dataRestaurants = {
     'services': 'Corporative discounts'
   }, {
     'name': 'Ecodinner',
-    'slogan': '',
+    'slogan': 'Taken from our very own orchard',
     'address': '789 Made-up Avenue, Imaginary City, Fabricated Country',
     'services': 'Reservations'
   }, {
@@ -26,7 +26,7 @@ var dataRestaurants = {
     'services': '2 x 1 deal on Tuesdays'
   }, {
     'name': 'Healthish',
-    'slogan': '',
+    'slogan': 'Enjoy our green environment',
     'address': '456 Made-up Avenue, Imaginary City, Fabricated Country',
     'services': '2 x 1 deal on Tuesdays'
   }
