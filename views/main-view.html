@@ -47,24 +47,34 @@ maximum-scale=1">
     <section class="restaurants-pictures-container container-fluid veggie-restaurant" hidden>
         <div class="row row-rest-pics">
           <figure class="col-xs-4 veggie-rest1">
-            <a data-toggle="modal" data-target="#MODAL-veggie-rest1">
+            <a data-toggle="modal" data-target="#MODAL-restaurant">
               <img src="../assets/images/veggie-rest.jpeg" alt="veggie-restaurant">
             </a>
           </figure>
           <figure class="col-xs-4 veggie-rest2">
-            <img src="../assets/images/veggie-rest-1.jpeg" alt="veggie-restaurant-drink">
+            <a data-toggle="modal" data-target="#MODAL-restaurant">
+              <img src="../assets/images/veggie-rest-1.jpeg" alt="veggie-restaurant-drink">
+            </a>
           </figure>
           <figure class="col-xs-4 veggie-rest3">
-            <img src="../assets/images/veggie-rest-2.jpeg" alt="">
+            <a data-toggle="modal" data-target="#MODAL-restaurant">
+              <img src="../assets/images/veggie-rest-2.jpeg" alt="">
+            </a>
           </figure>
           <figure class="col-xs-4 veggie-rest4">
-            <img src="../assets/images/veggie-rest-3.jpeg" alt="">
+            <a data-toggle="modal" data-target="#MODAL-restaurant">
+              <img src="../assets/images/veggie-rest-3.jpeg" alt="">
+            </a>
           </figure>
           <figure class="col-xs-4 veggie-rest5">
-            <img src="../assets/images/veggie-rest-4.jpeg" alt="">
+            <a data-toggle="modal" data-target="#MODAL-restaurant">
+              <img src="../assets/images/veggie-rest-4.jpeg" alt="">
+            </a>
           </figure>
           <figure class="col-xs-4 veggie-rest6">
-            <img src="../assets/images/veggie-rest-5.jpeg" alt="">
+            <a data-toggle="modal" data-target="#MODAL-restaurant">
+              <img src="../assets/images/veggie-rest-5.jpeg" alt="">
+            </a>
           </figure>
         </div>
         <!-- <div class="row row-rest-pics">
@@ -99,25 +109,24 @@ maximum-scale=1">
         </div> -->
     </section>
 
-    <!-- Sección de ventanas emergentes -->
+    <!-- SECCIÓN DE VENTANA EMERGENTE REUTILIZABLE -->
     <section>
-      <!-- Modal del primer restaurante -->
-      <div class="modal fade" id="MODAL-veggie-rest1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal fade" id="MODAL-restaurant" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
               <!-- Título donde irá el nombre del restaurante -->
-              <h2 class="modal-title text-center" id="restaurant-name">Modal title</h2>
+              <h2 class="modal-title text-center" id="restaurant-name"></h2>
             </div>
             <div class="modal-body">
               <div class="">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d414868.7070246611!2d139.430200842747!3d35.67301845064723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x605d1b87f02e57e7%3A0x2e01618b22571b89!2zVG9raW8sIEphcMOzbg!5e0!3m2!1ses-419!2spe!4v1514653470081" width="300" height="300" frameborder="0" style="border:0" allowfullscreen class="center-block"></iframe>
-                <h4 class="text-center" id="slogan">slogan</h6>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d414868.7070246611!2d139.430200842747!3d35.67301845064723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x605d1b87f02e57e7%3A0x2e01618b22571b89!2zVG9raW8sIEphcMOzbg!5e0!3m2!1ses-419!2spe!4v1514653470081" width="280" height="300" frameborder="0" style="border:0" allowfullscreen class="center-block"></iframe>
+                <h4 class="text-center" id="slogan"></h6>
               </div>
               <div class="info-modal-container">
-                <p class="info-modal text-center" id="address">Lorem ipsum dolor sit amet, consectetur adipisicing el  it.</p>
-                <p class="info-modal text-center" id="services">Lorem ipsum dolor sit amet, consectetur adipisicing el  it.</p>
+                <p class="info-modal text-center" id="address"></p>
+                <p class="info-modal text-center" id="services"></p>
               </div>
 
             </div>
@@ -128,6 +137,7 @@ maximum-scale=1">
           </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
       </div><!-- /.modal -->
+
     </section>
 
 
@@ -135,7 +145,7 @@ maximum-scale=1">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
     crossorigin="anonymous"></script>
     <!-- JS de información de restaurantes para modales -->
-    <!-- <script type="text/javascript" src="../js/restaurant-info.js"></script> -->
+    <script type="text/javascript" src="../js/restaurant-info.js"></script>
     <!-- Javascript -->
     <script type="text/javascript" src="../js/main-view.js"></script>
     <!-- Data JS -->
