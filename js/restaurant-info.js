@@ -86,10 +86,10 @@ function gettingVeggieInfo() {
   getVeggieRestaurantServices();
 }
 
-/* Función para obtener nombre del restaurante vegetariano (devuelve array) */
+/* FUNCIÓN QUE OBTIENE UN ARRAY CON LOS NOMBRES DE LOS RESTAURANTES VEGETARIANOS */
 function getVeggieRestaurantName(data) {
   // alert('Esta función debe conectarse con el mouseover');
-  //  Crear variable para tipo de restaurante (vegetariano)
+  //  Crear variable para tipo de restaurante vegetariano
   var typeofrestaurant = dataRestaurants['vegetarian-restaurants'];
   // Crear variable para capturar la lista de restaurantes tomándolo de la data de restaurates
   var veggieRestaurantNames = [];
@@ -103,7 +103,7 @@ function getVeggieRestaurantName(data) {
 
 /* FUNCIÓN QUE OBTIENE UN ARRAY CON LOS ESLÓGANES DE RESTAURANTES VEGETARIANOS */
 function getVeggieRestaurantSlogan(data) {
-  //  Crear variable para tipo de restaurante (vegetariano)
+  //  Crear variable para tipo de restaurante vegetariano
   var typeofrestaurant = dataRestaurants['vegetarian-restaurants'];
   // Crear variable para capturar la lista de restaurantes tomándolo de la data de restaurates
   var restaurantSlogans = [];
@@ -117,7 +117,7 @@ function getVeggieRestaurantSlogan(data) {
 
 /* FUNCIÓN QUE OBTIENE UN ARRAY CON LAS DIRECCIONES DE RESTAURANTES VEGETARIANOS */
 function getVeggieRestaurantAddress(data) {
-  //  Crear variable para tipo de restaurante (vegetariano)
+  //  Crear variable para tipo de restaurante vegetariano
   var typeofrestaurant = dataRestaurants['vegetarian-restaurants'];
   // Crear variable para capturar la lista de restaurantes tomándolo de la data de restaurates
   var restaurantAddress = [];
@@ -131,7 +131,7 @@ function getVeggieRestaurantAddress(data) {
 
 /* FUNCIÓN QUE OBTIENE UN ARRAY CON LOS SERVICIOS OFRECIDOS POR RESTAURANTES VEGETARIANOS */
 function getVeggieRestaurantServices(data) {
-  //  Crear variable para tipo de restaurante (vegetariano)
+  //  Crear variable para tipo de restaurante vegetariano
   var typeofrestaurant = dataRestaurants['vegetarian-restaurants'];
   // Crear variable para capturar la lista de restaurantes tomándolo de la data de restaurates
   var restaurantServices = [];

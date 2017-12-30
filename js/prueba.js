@@ -1,58 +1,65 @@
 
-/* función de prueba */
-// $('.veggie-rest1').on('click', function() {
-//   $('#MODAL-restaurant').find('#slogan').append(getVeggieRestaurantSlogan()[0]);
-//   $('#MODAL-restaurant').find('#address').append(getVeggieRestaurantAddress()[0]);
-//   $('#MODAL-restaurant').find('#services').append(getVeggieRestaurantServices()[0]);
-// });
-
-/*
-// Función que muestra cada información al dar un click en imagen (DE PRUEBA)
-function showInfoByClicking() {
-// Crear variable que obtiene las imágenes
-  var veggieRestPic1 = $('.veggie-rest1');
-  var veggieRestPic2 = $('.veggie-rest2');
-  var veggieRestPic3 = $('.veggie-rest3');
-  var veggieRestPic4 = $('.veggie-rest4');
-  var veggieRestPic5 = $('.veggie-rest5');
-  var veggieRestPic6 = $('.veggie-rest6');
-
-  // Crear función de click para mostrar eslogan para cada restaurante
-  $(veggieRestPic1).on('click', function() {
-    // Crear un párrafo que muestre el slogan del restaurante
-    var restaurantSlogan = $('<span/>');
-    restaurantSlogan.text(getVeggieRestaurantSlogan()[0]);
-    $(this).append(restaurantSlogan);
-  });
-  $(veggieRestPic2).on('click', function() {
-    // Crear un párrafo que muestre el slogan del restaurante
-    var restaurantSlogan = $('<span/>');
-    restaurantSlogan.text(getVeggieRestaurantSlogan()[1]);
-    $(this).append(restaurantSlogan);
-  });
-  $(veggieRestPic3).on('click', function() {
-    // Crear un párrafo que muestre el slogan del restaurante
-    var restaurantSlogan = $('<span/>');
-    restaurantSlogan.text(getVeggieRestaurantSlogan()[2]);
-    $(this).append(restaurantSlogan);
-  });
-  $(veggieRestPic4).on('click', function() {
-    // Crear un párrafo que muestre el slogan del restaurante
-    var restaurantSlogan = $('<span/>');
-    restaurantSlogan.text(getVeggieRestaurantSlogan()[3]);
-    $(this).append(restaurantSlogan);
-  });
-  $(veggieRestPic5).on('click', function() {
-    // Crear un párrafo que muestre el slogan del restaurante
-    var restaurantSlogan = $('<span/>');
-    restaurantSlogan.text(getVeggieRestaurantSlogan()[4]);
-    $(this).append(restaurantSlogan);
-  });
-  $(veggieRestPic6).on('click', function() {
-    // Crear un párrafo que muestre el slogan del restaurante
-    var restaurantSlogan = $('<span/>');
-    restaurantSlogan.text(getVeggieRestaurantSlogan()[5]);
-    $(this).append(restaurantSlogan);
-  });
+/* FUNCIÓN PARA OBTENER CADA INFORMACIÓN DE RESTAURANTE DE PARILLAS: ESLOGAN, DIRECCIÓN Y SERVICIOS */
+function gettingSteakInfo() {
+  getSteakRestaurantName();
+  getSteakRestaurantSlogan(); // devuelve array   getSteakRestaurantSlogan()[0]
+  getSteakRestaurantAddress();
+  getSteakRestaurantServices();
 }
-*/
+
+/* FUNCIÓN QUE OBTIENE UN ARRAY CON LOS NOMBRES DE LOS RESTAURANTES DE PARILLAS */
+function getSteakRestaurantName(data) {
+  // alert('Esta función debe conectarse con el mouseover');
+  //  Crear variable para tipo de restaurante de parillas
+  var typeofrestaurant = dataRestaurants['steak-restaurants'];
+  // Crear variable para capturar la lista de restaurantes tomándolo de la data de restaurates
+  var restaurantNames = [];
+  // Iterar por cada uno de los restaurantes de parillas para conseguir el nombre de cada uno
+  for (var i = 0; i < typeofrestaurant.length; i++) {
+    name = typeofrestaurant[i]['name'];
+    restaurantNames.push(name);
+  }
+  return restaurantNames;
+}
+
+/* FUNCIÓN QUE OBTIENE UN ARRAY CON LOS ESLÓGANES DE RESTAURANTES DE PARILLAS */
+function getSteakRestaurantSlogan(data) {
+  //  Crear variable para tipo de restaurante de parillas
+  var typeofrestaurant = dataRestaurants['steak-restaurants'];
+  // Crear variable para capturar la lista de restaurantes tomándolo de la data de restaurates
+  var restaurantSlogans = [];
+  // Iterar por cada uno de los restaurantes de parillas para conseguir el nombre de cada uno
+  for (var i = 0; i < typeofrestaurant.length; i++) {
+    slogan = typeofrestaurant[i]['slogan'];
+    restaurantSlogans.push(slogan);
+  }
+  return restaurantSlogans;
+}
+
+/* FUNCIÓN QUE OBTIENE UN ARRAY CON LAS DIRECCIONES DE RESTAURANTES DE PARILLAS */
+function getSteakRestaurantAddress(data) {
+  //  Crear variable para tipo de restaurante de parillas
+  var typeofrestaurant = dataRestaurants['steak-restaurants'];
+  // Crear variable para capturar la lista de restaurantes tomándolo de la data de restaurates
+  var restaurantAddress = [];
+  // Iterar por cada uno de los restaurantes de parillas para conseguir el nombre de cada uno
+  for (var i = 0; i < typeofrestaurant.length; i++) {
+    address = typeofrestaurant[i]['address'];
+    restaurantAddress.push(address);
+  }
+  return restaurantAddress;
+}
+
+/* FUNCIÓN QUE OBTIENE UN ARRAY CON LOS SERVICIOS OFRECIDOS POR RESTAURANTES DE PARILLAS */
+function getSteakRestaurantServices(data) {
+  //  Crear variable para tipo de restaurante de parillas
+  var typeofrestaurant = dataRestaurants['steak-restaurants'];
+  // Crear variable para capturar la lista de restaurantes tomándolo de la data de restaurates
+  var restaurantServices = [];
+  // Iterar por cada uno de los restaurantes de parillas para conseguir el nombre de cada uno
+  for (var i = 0; i < typeofrestaurant.length; i++) {
+    services = typeofrestaurant[i]['services'];
+    restaurantServices.push(services);
+  }
+  return restaurantServices;
+}
