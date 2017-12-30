@@ -94,3 +94,24 @@ img {
   width: 100%;
   height: 100%;
 }
+
+.modal .modal-title, .modal .info-modal {
+  color: #000;
+}
+
+#slogan {
+  color: #fe7e11;
+}
+
+.info-modal {
+  width: 49%;
+  display: inline-flex;
+  margin: 0;
+  margin-right: 0;
+  color: #fe7e11;
+}
+
+#btn-modal {
+  background-color: #fe7e11;
+  border: none;
+}
