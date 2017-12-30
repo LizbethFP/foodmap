@@ -1,3 +1,81 @@
+// Función general que contiene cada función
+function begin() {
+  gettingSteakInfo();
+  showsSteakRestInfoByClickingOnModal();
+}
+
+/* FUNCIÓN QUE MUESTRA INFORMACIÓN AL APARECER MODAL PARA RESTAURANTES DE PARRILLAS */
+function showsSteakRestInfoByClickingOnModal() {
+  $('figure').on('click', function() {
+    if ($(this).is('.steak-rest1')) {
+      // Eliminar el contenido textual de cada elemento
+      $('#MODAL-restaurant').find('#restaurant-name').text('');
+      $('#MODAL-restaurant').find('#slogan').text('');
+      $('#MODAL-restaurant').find('#address').text('');
+      $('#MODAL-restaurant').find('#services').text('');
+      // Agregar el contenido textual en cada elemento
+      $('#MODAL-restaurant').find('#restaurant-name').append(getSteakRestaurantName()[0]);
+      $('#MODAL-restaurant').find('#slogan').append(getSteakRestaurantSlogan()[0]);
+      $('#MODAL-restaurant').find('#address').append(getSteakRestaurantAddress()[0]);
+      $('#MODAL-restaurant').find('#services').append(getSteakRestaurantServices()[0]);
+    } else if ($(this).is('.steak-rest2')) {
+      // Eliminar el contenido textual de cada elemento
+      $('#MODAL-restaurant').find('#restaurant-name').text('');
+      $('#MODAL-restaurant').find('#slogan').text('');
+      $('#MODAL-restaurant').find('#address').text('');
+      $('#MODAL-restaurant').find('#services').text('');
+      // Agregar el contenido textual en cada elemento
+      $('#MODAL-restaurant').find('#restaurant-name').append(getSteakRestaurantName()[1]);
+      $('#MODAL-restaurant').find('#slogan').append(getSteakRestaurantSlogan()[1]);
+      $('#MODAL-restaurant').find('#address').append(getSteakRestaurantAddress()[1]);
+      $('#MODAL-restaurant').find('#services').append(getSteakRestaurantServices()[1]);
+    } else if ($(this).is('.steak-rest3')) {
+      // Eliminar el contenido textual de cada elemento
+      $('#MODAL-restaurant').find('#restaurant-name').text('');
+      $('#MODAL-restaurant').find('#slogan').text('');
+      $('#MODAL-restaurant').find('#address').text('');
+      $('#MODAL-restaurant').find('#services').text('');
+      // Agregar el contenido textual en cada elemento
+      $('#MODAL-restaurant').find('#restaurant-name').append(getSteakRestaurantName()[2]);
+      $('#MODAL-restaurant').find('#slogan').append(getSteakRestaurantSlogan()[2]);
+      $('#MODAL-restaurant').find('#address').append(getSteakRestaurantAddress()[2]);
+      $('#MODAL-restaurant').find('#services').append(getSteakRestaurantServices()[2]);
+    } else if ($(this).is('.steak-rest4')) {
+      // Eliminar el contenido textual de cada elemento
+      $('#MODAL-restaurant').find('#restaurant-name').text('');
+      $('#MODAL-restaurant').find('#slogan').text('');
+      $('#MODAL-restaurant').find('#address').text('');
+      $('#MODAL-restaurant').find('#services').text('');
+      // Agregar el contenido textual en cada elemento
+      $('#MODAL-restaurant').find('#restaurant-name').append(getSteakRestaurantName()[3]);
+      $('#MODAL-restaurant').find('#slogan').append(getSteakRestaurantSlogan()[3]);
+      $('#MODAL-restaurant').find('#address').append(getSteakRestaurantAddress()[3]);
+      $('#MODAL-restaurant').find('#services').append(getSteakRestaurantServices()[3]);
+    } else if ($(this).is('.steak-rest5')) {
+      // Eliminar el contenido textual de cada elemento
+      $('#MODAL-restaurant').find('#restaurant-name').text('');
+      $('#MODAL-restaurant').find('#slogan').text('');
+      $('#MODAL-restaurant').find('#address').text('');
+      $('#MODAL-restaurant').find('#services').text('');
+      // Agregar el contenido textual en cada elemento
+      $('#MODAL-restaurant').find('#restaurant-name').append(getSteakRestaurantName()[4]);
+      $('#MODAL-restaurant').find('#slogan').append(getSteakRestaurantSlogan()[4]);
+      $('#MODAL-restaurant').find('#address').append(getSteakRestaurantAddress()[4]);
+      $('#MODAL-restaurant').find('#services').append(getSteakRestaurantServices()[4]);
+    } else if ($(this).is('.steak-rest6')) {
+      // Eliminar el contenido textual de cada elemento
+      $('#MODAL-restaurant').find('#restaurant-name').text('');
+      $('#MODAL-restaurant').find('#slogan').text('');
+      $('#MODAL-restaurant').find('#address').text('');
+      $('#MODAL-restaurant').find('#services').text('');
+      // Agregar el contenido textual en cada elemento
+      $('#MODAL-restaurant').find('#restaurant-name').append(getSteakRestaurantName()[5]);
+      $('#MODAL-restaurant').find('#slogan').append(getSteakRestaurantSlogan()[5]);
+      $('#MODAL-restaurant').find('#address').append(getSteakRestaurantAddress()[5]);
+      $('#MODAL-restaurant').find('#services').append(getSteakRestaurantServices()[5]);
+    }
+  });
+}
 
 /* FUNCIÓN PARA OBTENER CADA INFORMACIÓN DE RESTAURANTE DE PARILLAS: ESLOGAN, DIRECCIÓN Y SERVICIOS */
 function gettingSteakInfo() {
@@ -63,3 +141,5 @@ function getSteakRestaurantServices(data) {
   }
   return restaurantServices;
 }
+
+$(document).ready(begin);
