@@ -2,10 +2,11 @@ function begin() {
   splashScreen();
 };
 function splashScreen() {
-  // Crear variable para la sección de carga
+  // Crear variable para el elemento a animar
   var title = $('.main-title');
+  // Crear efecto de toggle al elemento
   $(title).slideToggle(3000);
-  // Crear parámetro en el que se quita la característica de oculto a la sección de carga
+  // Redireccionar a siguiente página en 6 segundos
   setTimeout(function() {
     window.location.href = ('views/main-view.html');
   }, 6000);
