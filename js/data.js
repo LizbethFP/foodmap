@@ -3,12 +3,12 @@ var dataRestaurants = {
     'name': 'Greenie',
     'slogan': 'Don\'t worry, be Greenie',
     'address': '147 Made-up Avenue, Imaginary City, Fabricated Country',
-    'services': 'weekend discounts'
+    'services': 'Weekend discounts'
   }, {
     'name': 'Avocado lovers',
     'slogan': 'Avocado for life',
     'address': '258 Made-up Avenue, Imaginary City, Fabricated Country',
-    'services': 'veterants discounts'
+    'services': 'Veterants discounts'
   }, {
     'name': 'Veggié',
     'slogan': 'French vegetarians',
@@ -27,15 +27,15 @@ var dataRestaurants = {
   }, {
     'name': 'Healthish',
     'slogan': 'Enjoy our green environment',
-    'address': '456 Made-up Avenue, Imaginary City, Fabricated Country',
-    'services': '2 x 1 deal on Tuesdays'
+    'address': '983 Made-up Avenue, Imaginary City, Fabricated Country',
+    'services': 'All you can eat and drink'
   }
   ],
   'steak-restaurants': [{
     'name': 'The steakhouse',
     'slogan': 'Welcome home!',
     'address': '321 Fake Avenue, Fony City, Unreal Country',
-    'services': 'valet parking'
+    'services': 'Valet parking'
   }, {
     'name': 'Grilled',
     'slogan': 'Best grilled steaks of the country!',
@@ -45,17 +45,17 @@ var dataRestaurants = {
     'name': 'Grandpa\'s steakhouse',
     'slogan': 'Just like papa used to grill',
     'address': '753 Fake Avenue, Fony City, Unreal Country',
-    'services': 'eat and drink'
+    'services': 'All you can eat and drink'
   }, {
     'name': 'Steak and beans',
     'slogan': 'We got grandma\'s recipe',
     'address': '951 Fake Avenue, Fony City, Unreal Country',
-    'services': 'valet parking'
+    'services': 'Birthday discounts'
   }, {
     'name': 'Unpretentious steak',
     'slogan': 'Five stars steaks',
     'address': '852 Fake Avenue, Fony City, Unreal Country',
-    'services': 'Birthday discounts'
+    'services': 'Valet parking'
   }, {
     'name': 'Steak and beer',
     'slogan': 'Old good stuff',
