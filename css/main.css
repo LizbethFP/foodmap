@@ -18,9 +18,10 @@ body {
   box-sizing: border-box;
 }
 
-.container-flex-row {
+.container-flex-column {
 	display: flex;
-	justify-content: space-between;
+	/* justify-content: space-between; */
+  align-items: center;
 }
 
 .vh100 {
@@ -33,7 +34,8 @@ body {
 
 /* Clases específicas */
 .main-title {
-  margin-top: 85%;
+  /* margin-top: 60%; */
+  /* vertical-align: middle; */
 }
 
 header hr {
