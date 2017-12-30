@@ -33,9 +33,9 @@ body {
 }
 
 /* Clases específicas */
-.main-title {
-  /* margin-top: 60%; */
-  /* vertical-align: middle; */
+.loading-section hr {
+   width: 80%;
+   background-color: #a36125;
 }
 
 header hr {
