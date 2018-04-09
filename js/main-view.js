@@ -237,33 +237,6 @@ function mouseOverPicture() {
   });
 };
 
-/* Función que genera un efecto al pasar el mouse VERSION 1 sobre alguna de las imágenes */
-// function mouseOverPicture() {
-//   $('.row-rest-pics').on('mouseover', 'figure', function() {
-//     // Crear un párrafo que muestre el nombre del restaurante
-//     var restaurantName = $('<p/>');
-//     restaurantName.text(getVeggieRestaurantName()[0]);
-//     // // Agregar el párrafo creado dentro del contenedor de imagen para mostrar el nombre del restaurante
-//     $(this).append(restaurantName);
-//     // Quitar y agregar clase active en el elemento donde ocurre el mouseover
-//     $(this).removeClass('active').addClass('active');
-//     // Quitarle la clase active a los hermanos
-//     $(this).siblings().removeClass('active');
-//     // Quitarle el nombre de restaurante a los hermanos
-//     $(this).siblings().find('p').remove();
-//     $(this).siblings().find('span').remove();
-//     // llamado de función para mostrar nombre de restaurante
-//     // getVeggieRestaurantName();
-//   });
-// }
-
-/* FUNCIÓN PARA ELIMINAR PÁRRAFOS AL COLOCAR EL MOUSE FUERA DE LA IMAGEN */
-// function mouseOutPicture() {
-//   $('.row-rest-pics').on('mouseout', 'figure', function() {
-//     $(this).find('p').remove();
-//   });
-// }
-
 
 /* FUNCIÓN PARA HACER LA BÚSQUEDA DE LOS TIPOS DE RESTAURANTES */
 function searchRestaurant() {
@@ -276,9 +249,9 @@ function searchRestaurant() {
     // Guardo en la variable lo que se ingresó en el input
     var restauranteType = $(this).val();
     // Creo condicionales en el que se pasa el valor de lo escrito en el input y se igual a algunas opciones preestablecidas para los tipos de restaurantes
-    if (restauranteType === 'comida vegetariana' || restauranteType === 'vegetariana' || restauranteType === 'veget' || restauranteType === 'veg') {
+    if (restauranteType === 'vegeterian food' || restauranteType === 'vegetarian' || restauranteType === 'veget' || restauranteType === 'veg') {
       veggieRestaurant.show();
-    } else if (restauranteType === 'parrilla' || restauranteType === 'par' || restauranteType === 'carne') {
+    } else if (restauranteType === 'grill' || restauranteType === 'gri' || restauranteType === 'meat') {
       steakRestaurant.show();
     } else if (restauranteType === '') {
       restaurantsPicturesContainer.hide();

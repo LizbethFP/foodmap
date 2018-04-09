@@ -58,7 +58,7 @@ var dataRestaurants = {
     'services': 'Valet parking'
   }, {
     'name': 'Steak and beer',
-    'slogan': 'Old good stuff',
+    'slogan': 'Good old stuff',
     'address': '762 Fake Avenue, Fony City, Unreal Country',
     'services': 'Big group discounts'
   }]
